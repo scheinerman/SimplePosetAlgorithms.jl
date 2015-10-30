@@ -4,6 +4,7 @@ using SimpleGraphs
 using SimplePosets
 using SimpleGraphAlgorithms
 
+export max_chain, max_antichain
 
 function max_chain(P::SimplePoset)
     return max_clique(ComparabilityGraph(P))
