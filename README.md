@@ -14,9 +14,9 @@ Additional algorithms for the `SimplePoset` type. Relies on
 `SimplePoset`
 
 * `width(P)` returns the size of a largest antichain in the
-  `SimplePoset`. (**Note**: The function `height` (which gives the size
-  of a largest chain) is already defined in the `SimplePosets`) module
-  and does not rely on integer linear programming.)
+  `SimplePoset`. [**Note**: The function `height` (which gives the size
+  of a largest chain) is already defined in the `SimplePosets` module
+  and does not rely on integer linear programming.]
 
 ## Examples
 
