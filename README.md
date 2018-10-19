@@ -1,5 +1,12 @@
 # SimplePosetAlgorithms
 
+
+[![Build Status](https://travis-ci.org/scheinerman/SimplePosetAlgorithms.jl.svg?branch=master)](https://travis-ci.org/scheinerman/SimplePosetAlgorithms.jl)
+
+
+[![codecov.io](http://codecov.io/github/scheinerman/SimplePosetAlgorithms.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/SimplePosetAlgorithms.jl?branch=master)
+
+
 Additional algorithms for the `SimplePoset` type. Relies on
 `SimpleGraphAlgorithms`. See that module for more information.
 
@@ -23,7 +30,7 @@ Additional algorithms for the `SimplePoset` type. Relies on
 ```julia
 julia> using SimplePosets; using SimplePosetAlgorithms
 
-julia> using ShowSet # (my module for prettier output; ignore warnings)
+julia> using ShowSet # module for nicer Set output
 
 julia> P = Boolean(5)
 SimplePoset{ASCIIString} (32 elements)
