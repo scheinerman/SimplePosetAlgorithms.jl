@@ -168,16 +168,20 @@ function dimension_work(P::SimplePoset, lb::Int, ub::Int, verb::Bool)::Int
 
     mid = Int(floor((ub+lb)/2))
 
+    if verb
+        print("looking for a $mid realizer\t")
+    end
+
     try
         R = realizer(P,mid)
         if verb
-            println("$mid realizer confirmed")
+            println("confirmed")
         end
         return dimension_work(P,lb,mid,verb)
     catch
     end
     if verb
-        println("no $mid realizer exists")
+        println("none exists")
     end
     return dimension_work(P,mid+1,ub,verb)
 end

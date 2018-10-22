@@ -67,10 +67,10 @@ true
 julia> P = BooleanLattice(4)
 SimplePoset{String} (16 elements)
 
-julia> dimension(P,true)  # warnings removed from output
-2 <= dim(P) <= 8	5 realizer confirmed
-2 <= dim(P) <= 5	no 3 realizer exists
-4 <= dim(P) <= 5	4 realizer confirmed
+julia> dimension(P,true)
+2 <= dim(P) <= 8	looking for a 5 realizer	confirmed
+2 <= dim(P) <= 5	looking for a 3 realizer	none exists
+4 <= dim(P) <= 5	looking for a 4 realizer	confirmed
 4 <= dim(P) <= 4	and we're done
 4
 ```
