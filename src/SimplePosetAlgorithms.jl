@@ -26,6 +26,7 @@ end
 `width(P)` gives the size of a largest antichain in the poset `P`.
 """
 width(P::SimplePoset) = length(max_antichain(P))
-    
+
+include("realizer.jl")
 
 end # of module SimplePosetAlgorithms

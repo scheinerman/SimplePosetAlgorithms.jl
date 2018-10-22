@@ -9,3 +9,10 @@ C = max_chain(P)
 A = max_antichain(P)
 @test length(A) == 10
 @test width(P) == 10
+
+R = realizer(P,5)
+Q = realize_poset(R)
+@test P==Q
+
+P = StandardExample(4)
+@test dimension(P) == 4
