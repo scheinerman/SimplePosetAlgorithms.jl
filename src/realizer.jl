@@ -12,7 +12,8 @@ whose columns give the linear extensions. The first element in each column is th
 bottom element of that linear extension.
 """
 function realizer(P::SimplePoset{T}, d::Int) where T
-    MOD = Model(solver=SimpleGraphAlgorithms._SOLVER())
+    # MOD = Model(solver=SimpleGraphAlgorithms._SOLVER())
+    MOD = Model(with_optimizer(SimpleGraphAlgorithms.my_solver.Optimizer))
 
     VV = elements(P)
     n = length(VV)
@@ -74,12 +75,14 @@ function realizer(P::SimplePoset{T}, d::Int) where T
         end
     end
 
-    status = solve(MOD)
-    if status != :Optimal
+    optimize!(MOD)
+    status = Int(termination_status(MOD))
+
+    if status != 1
         error("This poset has dimension greater than $d; no realizer found.")
     end
 
-    X = getvalue(x)
+    X = value.(x)
 
     PP = [ SimplePoset{T}() for t =1:d]
     for t=1:d
