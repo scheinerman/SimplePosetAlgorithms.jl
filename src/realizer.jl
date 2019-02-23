@@ -13,7 +13,8 @@ bottom element of that linear extension.
 """
 function realizer(P::SimplePoset{T}, d::Int) where T
     # MOD = Model(solver=SimpleGraphAlgorithms._SOLVER())
-    MOD = Model(with_optimizer(SimpleGraphAlgorithms.my_solver.Optimizer))
+    MOD = Model(with_optimizer(SimpleGraphAlgorithms._SOLVER.Optimizer;
+        SimpleGraphAlgorithms._OPTS...))
 
     VV = elements(P)
     n = length(VV)
