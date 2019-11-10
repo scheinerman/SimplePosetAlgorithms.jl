@@ -1,6 +1,6 @@
 export realizer, dimension, realize_poset
 
-using JuMP
+using JuMP, ChooseOptimizer
 
 _distinct(a,b,c) = (a!=b) && (a!=c) && (b!=c)
 
@@ -13,8 +13,7 @@ bottom element of that linear extension.
 """
 function realizer(P::SimplePoset{T}, d::Int) where T
     # MOD = Model(solver=SimpleGraphAlgorithms._SOLVER())
-    MOD = Model(with_optimizer(SimpleGraphAlgorithms._SOLVER.Optimizer;
-        SimpleGraphAlgorithms._OPTS...))
+    MOD = Model(get_solver())
 
     VV = elements(P)
     n = length(VV)

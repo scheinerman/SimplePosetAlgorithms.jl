@@ -1,6 +1,7 @@
-julia 0.7
+julia 1.0
 SimplePosets
 SimpleGraphs
 SimpleGraphAlgorithms
 JuMP
 Cbc
+ChooseOptimizer
