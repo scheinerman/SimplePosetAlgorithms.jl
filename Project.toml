@@ -12,12 +12,12 @@ SimplePosets = "b2aef97b-4721-5af9-b440-0bad754dc5ba"
 
 [compat]
 julia = "1"
-ChooseOptimizer = "0"
-JuMP = "0"
-SimpleGraphs = "0"
-SimpleGraphAlgorithms = "0"
-SimplePosets = "0"
-Cbc = "0"
+ChooseOptimizer = "0.1"
+JuMP = "0.18, 0.19, 0.20, 0.21"
+SimpleGraphs = "0.2, 0.3, 0.4, 0.5, 0.6"
+SimpleGraphAlgorithms = "0.0.1, 0.1, 0.2, 0.3, 0.4"
+SimplePosets = "0.0.2, 0.0.3, 0.1"
+Cbc = "0.4, 0.5, 0.6, 0.7"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
