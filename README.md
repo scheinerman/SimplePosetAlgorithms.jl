@@ -1,5 +1,8 @@
 # SimplePosetAlgorithms
 
+[![Build Status](https://travis-ci.com/scheinerman/SimplePosetAlgorithms.jl.svg?branch=master)](https://travis-ci.com/scheinerman/SimplePosetAlgorithms.jl)
+
+
 Additional algorithms for the `SimplePoset` type. Relies on
 `SimpleGraphAlgorithms`. See that module for more information.
 
