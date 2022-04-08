@@ -1,6 +1,6 @@
 name = "SimplePosetAlgorithms"
 uuid = "0c1320c5-0940-5dc6-8c7d-d9650cdddf58"
-version = "0.4.3"
+version = "0.4.4"
 
 [deps]
 Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
@@ -13,7 +13,7 @@ SimplePosets = "b2aef97b-4721-5af9-b440-0bad754dc5ba"
 [compat]
 julia = "1"
 ChooseOptimizer = "0.1"
-JuMP = "0.18, 0.19, 0.20, 0.21, 0.22"
+JuMP = "0.18, 0.19, 0.20, 0.21, 0.22, 1"
 SimpleGraphs = "0.5, 0.6, 0.7"
 SimpleGraphAlgorithms = "0.0.1, 0.1, 0.2, 0.3, 0.4"
 SimplePosets = "0.0.2, 0.0.3, 0.1"
