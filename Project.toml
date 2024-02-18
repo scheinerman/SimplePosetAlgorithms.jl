@@ -17,7 +17,7 @@ ChooseOptimizer = "0.1, 0.2"
 JuMP = "0.18, 0.19, 0.20, 0.21, 0.22, 1"
 SimpleGraphAlgorithms = "0.0.1, 0.1, 0.2, 0.3, 0.4, 0.5"
 SimpleGraphs = "0.8"
-SimplePosets = "0.0.2, 0.0.3, 0.1"
+SimplePosets = "0.1, 0.2"
 julia = "1"
 GLPK = "1"
 
