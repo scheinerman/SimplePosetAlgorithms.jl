@@ -1,6 +1,6 @@
 name = "SimplePosetAlgorithms"
 uuid = "0c1320c5-0940-5dc6-8c7d-d9650cdddf58"
-version = "0.5.1"
+version = "0.5.2"
 
 [deps]
 Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
